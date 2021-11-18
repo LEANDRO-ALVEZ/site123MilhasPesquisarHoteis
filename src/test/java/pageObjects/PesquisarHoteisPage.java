@@ -20,13 +20,13 @@ public class PesquisarHoteisPage {
 	@FindBy(name = "checkin_date")
 	WebElement preencherCampoCheckin;
 
-	@FindBy(xpath = "//span[text()=\" 10 \" ]")
+	@FindBy(xpath = "//span[text()=\" 25 \" ]")
 	WebElement selecionarDataCheckin;
 
 	@FindBy(name = "checkout_date")
 	WebElement preencherCampoCheckout;
 
-	@FindBy(xpath = "//span[contains(text(), '19')]")
+	@FindBy(xpath = "//span[contains(text(), '30')]")
 	WebElement selecionarDataCheckout;
 
 	@FindBy(xpath = "//*[@id=\"passengerSelectRooms\"]/span")
@@ -66,13 +66,12 @@ public class PesquisarHoteisPage {
 
 	public void selecionarDestino() throws InterruptedException {
 		selecionarDestino.click();
-		//Thread.sleep(2000);
 
 	}
 
 	public void preencherCampoCheckin() throws InterruptedException {
 		preencherCampoCheckin.click();
-		 Thread.sleep(1000);
+		Thread.sleep(1000);
 
 	}
 
